@@ -4,7 +4,7 @@ import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.desc
 
-object BasicSpark {
+object StructuredAPI {
 
   case class Person(ID: Int, name: String, age: Int, numFriends: Int, generatedDate: String)
 
