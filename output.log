@@ -1,0 +1,36 @@
+[info] Loading global plugins from C:\Users\gleon\.sbt\1.0\plugins
+[info] Updating ProjectRef(uri("file:/C:/Users/gleon/.sbt/1.0/plugins/"), "global-plugins")...
+[info] Done updating.
+[info] Loading settings for project spark-week-build from assembly.sbt ...
+[info] Loading project definition from C:\Presentation\SPARK\example\spark-week\project
+[info] Updating ProjectRef(uri("file:/C:/Presentation/SPARK/example/spark-week/project/"), "spark-week-build")...
+[info] Done updating.
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+[info] Loading settings for project spark-week from build.sbt ...
+[info] Set current project to spark-week (in build file:/C:/Presentation/SPARK/example/spark-week/)
+[warn] Multiple main classes detected.  Run 'show discoveredMainClasses' to see the list
++----+-------+
+|Name|Company|
++----+-------+
+|null|   null|
+|null|   null|
+|null|   null|
+|null|   null|
++----+-------+
+
+[info] MyJobTest:
+[info] Well formatted strings
+[info] - should just work
+[info] Poorly formatted strings
+[info] - should not work
+[info] ScalaTest
+[info] Run completed in 19 seconds, 313 milliseconds.
+[info] Total number of tests run: 2
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 2, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[info] Passed: Total 2, Failed 0, Errors 0, Passed 2
+[info] Strategy 'discard' was applied to 484 files (Run the task at debug level to see details)
+[info] Strategy 'first' was applied to 116 files (Run the task at debug level to see details)
+[info] Packaging C:\Presentation\SPARK\example\spark-week\target\scala-2.11\spark-week-assembly-0.1-SNAPSHOT.jar ...
+Terminate batch job (Y/N)? 

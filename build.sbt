@@ -2,6 +2,15 @@ name := "spark-week"
 version := "0.1-SNAPSHOT"
 organization := "com.endava" // change to your org
 
+mainClass in (Compile, run) := Some("com.endava.StructuredAPI")
+assemblyJarName in assembly := "spark-week.jar"
+test in assembly := {}
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+
 //scalaVersion := "2.13.1"
 scalaVersion := "2.11.12"
 

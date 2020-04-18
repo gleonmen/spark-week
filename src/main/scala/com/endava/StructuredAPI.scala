@@ -4,7 +4,7 @@ import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.desc
 
-object StructuredAPI {
+object StructuredAPI extends Serializable{
 
   case class Person(ID: Int, name: String, age: Int, numFriends: Int, generatedDate: String)
 
@@ -48,6 +48,7 @@ object StructuredAPI {
          LIMIT 5"""
     )
     maxSql.show()
+ 
   }
   
 }

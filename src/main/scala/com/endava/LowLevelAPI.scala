@@ -2,7 +2,7 @@ package com.endava
 import org.apache.spark._
 import org.apache.log4j._
 
-object LowLevelAPI {
+object LowLevelAPI extends Serializable {
   
   def mapper(line: String) = {
     val fields = line.split(',')

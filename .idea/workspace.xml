@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f4bc0e-5764-482e-a369-b5a3b77a3f10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spark-week-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spark-week-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +26,16 @@
     </projectState>
   </component>
   <component name="ExternalProjectsManager">
+    <system id="BSP">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
     <system id="SBT">
       <state>
         <projects_view>
@@ -32,13 +48,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="spark-week" type="f1a62948:ProjectNode" />
-                <item name="spark-week-build" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="spark-week" type="f1a62948:ProjectNode" />
-                <item name="spark-week-build" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="spark-week" type="2d1252cf:ModuleNode" />
               </path>
             </expand>
             <select />
@@ -62,6 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -75,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LowLevelAPI">
+  <component name="RunManager" selected="sbt Task.Fundamentals">
     <configuration name="LowLevelAPI" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.endava.LowLevelAPI" />
       <module name="spark-week" />
@@ -102,14 +113,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Fundamentals" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="tasks" value="assembly" />
+      <option name="useSbtShell" value="true" />
+      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="tasks" value="assembly" />
+      <option name="useSbtShell" value="true" />
+      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.StructuredAPI" />
       <item itemvalue="Application.LowLevelAPI" />
+      <item itemvalue="sbt Task.Fundamentals" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LowLevelAPI" />
         <item itemvalue="Application.StructuredAPI" />
+        <item itemvalue="Application.LowLevelAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +172,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/build.sbt" value="3108486783" />
+        <entry key="$PROJECT_DIR$" value="4760985683900" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3690500918" />
+        <entry key="$PROJECT_DIR$/project/assembly.sbt" value="2573304535" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
     </option>
@@ -166,7 +200,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587143882110</updated>
-      <workItem from="1587143887497" duration="3552000" />
+      <workItem from="1587143887497" duration="5733000" />
+      <workItem from="1587169248589" duration="9163000" />
+      <workItem from="1587179924180" duration="1552000" />
     </task>
     <servers />
   </component>
@@ -178,7 +214,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
