@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f4bc0e-5764-482e-a369-b5a3b77a3f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/output.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/spark-week-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spark-week-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala" afterDir="false" />
     </list>
@@ -50,6 +45,18 @@
                 <item name="spark-week" type="f1a62948:ProjectNode" />
                 <item name="spark-week" type="2d1252cf:ModuleNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spark-week" type="f1a62948:ProjectNode" />
+                <item name="spark-week" type="2d1252cf:ModuleNode" />
+                <item name="sbt commands" type="5c424813:SbtViewContributor$SbtCommandsGroupNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spark-week" type="f1a62948:ProjectNode" />
+                <item name="spark-week" type="2d1252cf:ModuleNode" />
+                <item name="sbt tasks" type="d9357504:SbtViewContributor$SbtTasksGroupNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -86,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="sbt Task.Fundamentals">
+  <component name="RunManager" selected="Application.StructuredAPI">
     <configuration name="LowLevelAPI" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.endava.LowLevelAPI" />
       <module name="spark-week" />
@@ -123,6 +130,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Run" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="tasks" value="run" />
+      <option name="useSbtShell" value="true" />
+      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="tasks" value="assembly" />
@@ -137,6 +154,7 @@
       <item itemvalue="Application.StructuredAPI" />
       <item itemvalue="Application.LowLevelAPI" />
       <item itemvalue="sbt Task.Fundamentals" />
+      <item itemvalue="sbt Task.Run" />
     </list>
     <recent_temporary>
       <list>
@@ -172,7 +190,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4760985683900" />
+        <entry key="$PROJECT_DIR$" value="4760989112624" />
         <entry key="$PROJECT_DIR$/build.sbt" value="3690500918" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="2573304535" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
@@ -182,6 +200,7 @@
       <map>
         <entry key="$PROJECT_DIR$/../AdvancedSql/AdvancedSql" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../SparkWeek" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="C:/courses/scala/LSL-P-lightbend-scala-language-professional/exercises" value="PREVIEW" />
         <entry key="C:/proyectos/workshop/foundation" value="PREVIEW" />
         <entry key="C:/scala-spark/mrc-madona" value="PREVIEW" />
@@ -202,7 +221,9 @@
       <updated>1587143882110</updated>
       <workItem from="1587143887497" duration="5733000" />
       <workItem from="1587169248589" duration="9163000" />
-      <workItem from="1587179924180" duration="1552000" />
+      <workItem from="1587179924180" duration="2611000" />
+      <workItem from="1587233865950" duration="103000" />
+      <workItem from="1587244079916" duration="1701000" />
     </task>
     <servers />
   </component>
@@ -224,5 +245,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala</url>
+          <line>50</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

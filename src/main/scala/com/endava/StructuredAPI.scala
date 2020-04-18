@@ -11,7 +11,7 @@ object StructuredAPI extends Serializable{
   def mapper(line: String): Person = {
     val fields = line.split(',')
     val person: Person = Person(fields(0).toInt, fields(1), fields(2).toInt, fields(3).toInt, fields(4))
-    return person
+    person
   }
 
   def main(args: Array[String]): Unit = {
@@ -48,7 +48,7 @@ object StructuredAPI extends Serializable{
          LIMIT 5"""
     )
     maxSql.show()
- 
+    spark.close()
   }
   
 }
