@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f4bc0e-5764-482e-a369-b5a3b77a3f10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/endava/EmergencyCall.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +92,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StructuredAPI">
+  <component name="RunManager" selected="Application.EmergencyCall">
+    <configuration name="EmergencyCall" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.endava.EmergencyCall" />
+      <module name="spark-week" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.endava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LowLevelAPI" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.endava.LowLevelAPI" />
       <module name="spark-week" />
@@ -153,13 +165,15 @@
     <list>
       <item itemvalue="Application.StructuredAPI" />
       <item itemvalue="Application.LowLevelAPI" />
+      <item itemvalue="Application.EmergencyCall" />
       <item itemvalue="sbt Task.Fundamentals" />
       <item itemvalue="sbt Task.Run" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StructuredAPI" />
+        <item itemvalue="Application.EmergencyCall" />
         <item itemvalue="Application.LowLevelAPI" />
+        <item itemvalue="Application.StructuredAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +237,14 @@
       <workItem from="1587169248589" duration="9163000" />
       <workItem from="1587179924180" duration="2611000" />
       <workItem from="1587233865950" duration="103000" />
-      <workItem from="1587244079916" duration="1701000" />
+      <workItem from="1587244079916" duration="2047000" />
+      <workItem from="1587246623556" duration="379000" />
+      <workItem from="1587313256897" duration="1758000" />
+      <workItem from="1587315063433" duration="1769000" />
+      <workItem from="1587316913613" duration="1754000" />
+      <workItem from="1587318715448" duration="1994000" />
+      <workItem from="1587321240302" duration="1772000" />
+      <workItem from="1587323715390" duration="1769000" />
     </task>
     <servers />
   </component>
@@ -245,16 +266,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala</url>
-          <line>50</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
