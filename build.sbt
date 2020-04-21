@@ -6,10 +6,15 @@ mainClass in (Compile, run) := Some("com.endava.StructuredAPI")
 assemblyJarName in assembly := "spark-week.jar"
 test in assembly := {}
 
+//assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
+
 assemblyMergeStrategy in assembly := {
   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
   case x => MergeStrategy.first
 }
+
+
+
 
 //scalaVersion := "2.13.1"
 scalaVersion := "2.11.12"
@@ -32,7 +37,8 @@ libraryDependencies ++= Seq(
   // spark core
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion,
-
+  "org.apache.spark" %% "spark-streaming" % sparkVersion % "provided",
+  "org.apache.spark" %% "spark-streaming-kafka" % sparkVersion,
   // spark-modules
   "org.apache.spark" %% "spark-graphx" % sparkVersion,
   // "org.apache.spark" %% "spark-mllib" % sparkVersion,
@@ -46,5 +52,6 @@ libraryDependencies ++= Seq(
 
   // logging
   "org.apache.logging.log4j" % "log4j-api" % "2.4.1",
+  "com.datastax.spark" %% "spark-cassandra-connector" % "1.6.0",
   "org.apache.logging.log4j" % "log4j-core" % "2.4.1"
 )

@@ -14,6 +14,12 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sbt: aopalliance:aopalliance:1.0:jar" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.spark:spark-streaming_2.11:2.2.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.spark:spark-streaming-kafka_2.11:1.6.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.kafka:kafka_2.11:0.8.2.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.kafka:kafka-clients:0.8.2.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.yammer.metrics:metrics-core:2.2.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.101tec:zkclient:0.3:jar" level="project" />
     <orderEntry type="module-library">
       <library name="sbt: unmanaged-sources-and-docs">
         <CLASSES />
@@ -195,5 +201,16 @@
     <orderEntry type="library" name="sbt: com.esotericsoftware:kryo-shaded:3.0.3:jar" level="project" />
     <orderEntry type="library" name="sbt: com.clearspring.analytics:stream:2.7.0:jar" level="project" />
     <orderEntry type="library" name="sbt: com.chuusai:shapeless_2.11:2.3.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.datastax.cassandra:cassandra-driver-core:3.0.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.datastax.spark:spark-cassandra-connector_2.11:1.6.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.twitter:jsr166e:1.1.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-buffer:4.0.33.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-codec:4.0.33.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-common:4.0.33.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-handler:4.0.33.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-transport:4.0.33.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: joda-time:joda-time:2.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.cassandra:cassandra-clientutil:3.0.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.joda:joda-convert:1.2:jar" level="project" />
   </component>
 </module>

@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f4bc0e-5764-482e-a369-b5a3b77a3f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/endava/EmergencyCall.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_datastax_cassandra_cassandra_driver_core_3_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_datastax_spark_spark_cassandra_connector_2_11_1_6_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_twitter_jsr166e_1_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_buffer_4_0_33_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_codec_4_0_33_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_common_4_0_33_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_handler_4_0_33_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__io_netty_netty_transport_4_0_33_Final_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__joda_time_joda_time_2_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_apache_cassandra_cassandra_clientutil_3_0_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_joda_joda_convert_1_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/endava/WeatherDataStream.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spark-week.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spark-week.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/EmergencyCall.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/EmergencyCall.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +78,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -92,7 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EmergencyCall">
+  <component name="RunManager" selected="Application.StructuredAPI">
     <configuration name="EmergencyCall" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.endava.EmergencyCall" />
       <module name="spark-week" />
@@ -171,9 +193,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EmergencyCall" />
-        <item itemvalue="Application.LowLevelAPI" />
         <item itemvalue="Application.StructuredAPI" />
+        <item itemvalue="Application.LowLevelAPI" />
+        <item itemvalue="Application.EmergencyCall" />
       </list>
     </recent_temporary>
   </component>
@@ -204,8 +226,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4760989112624" />
-        <entry key="$PROJECT_DIR$/build.sbt" value="3690500918" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3513727799" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="2573304535" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
@@ -214,7 +235,6 @@
       <map>
         <entry key="$PROJECT_DIR$/../AdvancedSql/AdvancedSql" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../SparkWeek" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="C:/courses/scala/LSL-P-lightbend-scala-language-professional/exercises" value="PREVIEW" />
         <entry key="C:/proyectos/workshop/foundation" value="PREVIEW" />
         <entry key="C:/scala-spark/mrc-madona" value="PREVIEW" />
@@ -245,6 +265,10 @@
       <workItem from="1587318715448" duration="1994000" />
       <workItem from="1587321240302" duration="1772000" />
       <workItem from="1587323715390" duration="1769000" />
+      <workItem from="1587325548509" duration="192000" />
+      <workItem from="1587402654756" duration="8393000" />
+      <workItem from="1587423495331" duration="100000" />
+      <workItem from="1587423993593" duration="2540000" />
     </task>
     <servers />
   </component>
