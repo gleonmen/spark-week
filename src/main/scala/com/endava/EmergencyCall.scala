@@ -42,17 +42,12 @@ object EmergencyCall {
     ).show()
     
     spark.sql(
-      """SELECT TRIM(TIPO_INCIDENTE), TRIM(LOCALIDAD), COUNT (TIPO_INCIDENTE) AS TOTAL
+      """SELECT  TRIM(LOCALIDAD), TRIM(TIPO_INCIDENTE), COUNT (TIPO_INCIDENTE) AS TOTAL
          FROM emergency_line_calls
          GROUP BY TRIM(TIPO_INCIDENTE),TRIM(LOCALIDAD)  
          ORDER BY TOTAL DESC, TRIM(TIPO_INCIDENTE)"""
     ).show()
-
-    
-
     spark.close()
-
-
   }
 
 }

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f4bc0e-5764-482e-a369-b5a3b77a3f10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/endava/EmergencyCall.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/EmergencyCall.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/EmergencyCall.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +204,6 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4760989112624" />
         <entry key="$PROJECT_DIR$/build.sbt" value="3690500918" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="2573304535" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
@@ -214,7 +213,6 @@
       <map>
         <entry key="$PROJECT_DIR$/../AdvancedSql/AdvancedSql" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../SparkWeek" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="C:/courses/scala/LSL-P-lightbend-scala-language-professional/exercises" value="PREVIEW" />
         <entry key="C:/proyectos/workshop/foundation" value="PREVIEW" />
         <entry key="C:/scala-spark/mrc-madona" value="PREVIEW" />
