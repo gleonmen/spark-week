@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f4bc0e-5764-482e-a369-b5a3b77a3f10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/EmergencyCall.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/EmergencyCall.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark-submit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spark-week.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spark-week.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/LowLevelAPI.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/endava/StructuredAPI.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EmergencyCall">
+  <component name="RunManager" selected="sbt Task.Fundamentals">
     <configuration name="EmergencyCall" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.endava.EmergencyCall" />
       <module name="spark-week" />
@@ -122,6 +126,7 @@
     <configuration name="StructuredAPI" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.endava.StructuredAPI" />
       <module name="spark-week" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../fakefriends.csv" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.endava.*" />
@@ -171,9 +176,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EmergencyCall" />
-        <item itemvalue="Application.LowLevelAPI" />
         <item itemvalue="Application.StructuredAPI" />
+        <item itemvalue="Application.LowLevelAPI" />
+        <item itemvalue="Application.EmergencyCall" />
       </list>
     </recent_temporary>
   </component>
@@ -204,6 +209,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="4761296019976" />
         <entry key="$PROJECT_DIR$/build.sbt" value="3690500918" />
         <entry key="$PROJECT_DIR$/project/assembly.sbt" value="2573304535" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
@@ -213,6 +219,7 @@
       <map>
         <entry key="$PROJECT_DIR$/../AdvancedSql/AdvancedSql" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../SparkWeek" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="C:/courses/scala/LSL-P-lightbend-scala-language-professional/exercises" value="PREVIEW" />
         <entry key="C:/proyectos/workshop/foundation" value="PREVIEW" />
         <entry key="C:/scala-spark/mrc-madona" value="PREVIEW" />
@@ -243,6 +250,7 @@
       <workItem from="1587318715448" duration="1994000" />
       <workItem from="1587321240302" duration="1772000" />
       <workItem from="1587323715390" duration="1769000" />
+      <workItem from="1587511620364" duration="2188000" />
     </task>
     <servers />
   </component>

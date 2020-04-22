@@ -1,5 +1,4 @@
 package com.endava
-
 import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.desc
@@ -21,11 +20,11 @@ object StructuredAPI extends Serializable{
       .builder
       .appName("SparkSQL")
       .master("local[*]") //remove for a productive environment
-      .config("spark.sql.warehouse.dir", "file:///C:/temp")
+      //.config("spark.sql.warehouse.dir", "file:///C:/temp")
       .getOrCreate()
 
     import spark.implicits._
-    val lines = spark.sparkContext.textFile("C:/Presentation/SPARK/example/fakefriends.csv")
+    val lines = spark.sparkContext.textFile(args(0))
     //RDD
     val people = lines.map(mapper).toDS().cache()
 

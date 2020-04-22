@@ -24,7 +24,7 @@ object LowLevelAPI extends Serializable {
     val friendsAgeRDD = ageFriendsRDD.map(x => (x._2, x._1)).sortByKey(false)
     //action
     val result = friendsAgeRDD.collect()
-    //output
+    //output 
     result.take(5).foreach(x => println(s"|Age  ${x._2} | Friends ${x._1} |"))
   }
 }

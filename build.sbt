@@ -4,7 +4,7 @@ organization := "com.endava" // change to your org
 
 mainClass in (Compile, run) := Some("com.endava.StructuredAPI")
 assemblyJarName in assembly := "spark-week.jar"
-test in assembly := {}
+//test in assembly := {}
 
 assemblyMergeStrategy in assembly := {
   case PathList("META-INF", xs @ _*) => MergeStrategy.discard
