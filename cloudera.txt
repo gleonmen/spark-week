@@ -1,0 +1,85 @@
+
+
+--CLOUDERA
+
+docker run --hostname=quickstart.cloudera --privileged=true -t -i -v C:\docker\cdh:/src --publish-all=true -p 8888 cloudera/quickstart /usr/bin/docker-quickstart
+
+http://localhost:32768/
+cloudera/cloudera 
+
+#Bash
+docker exec -it 48d931df22d2 bash
+docker exec -it d100a4223b36 bash
+
+
+HDFS 
+
+hdfs dfs -ls /
+hadoop fs -ls /
+hdfs dfs -ls /user 
+hdfs dfs -ls /user/cloudera 
+
+cd /home/cloudera
+
+docker cp adult.data d100a4223b36:/home/cloudera/adult.data
+
+hdfs dfs -ls /user/cloudera
+
+hdfs dfs -mkdir /user/cloudera/bash_folder
+
+hdfs dfs -put /home/cloudera/adult.data /user/cloudera/bash_folder/adult.data
+
+
+
+hdfs dfs -cp /user/myhdfsfolder/adult.csv /user/cloudera/adult.csv
+hdfs dfs -cat /user/myhdfsfolder/adult.csv
+hdfs dfs -touchz /user/myhdfsfolder/myfile.txt
+hdfs dfs -mv /user/myhdfsfolder/adult.csv /user/cloudera/adult.csv
+
+
+
+
+HIVE 
+show databases;
+create database demohive;
+use demohive;
+show tables; 
+CREATE TABLE ADULTS (age INT, workclass STRING, fnlwgt STRING, education STRING, educationnum STRING, maritalstatus STRING, occupation STRING, relationship STRING, race STRING, sex STRING, capitalgain STRING, capitalloss STRING, hoursperweek STRING, nativecountry STRING, result STRING) row format delimited fields terminated by ',' lines terminated by '\n';
+show tables; 
+describe adults; 
+LOAD DATA INPATH '/user/cloudera/bash_folder/adult.data' OVERWRITE INTO TABLE ADULTS;
+CREATE TABLE ADULTS_CLEANED (age INT, workclass STRING, fnlwgt INT, education STRING, educationnum INT, maritalstatus STRING, occupation STRING, relationship STRING, race STRING, sex STRING, capitalgain INT, capitalloss INT, hoursperweek INT, nativecountry STRING, result STRING) row format delimited fields terminated by ',' lines terminated by '\n';
+
+INSERT INTO TABLE adults_cleaned SELECT age, TRIM(workclass), cast(trim(FNLWGT) as int) as fnlwgt, TRIM(education), cast(trim(educationnum) as int) as educationnum, 
+	TRIM(maritalstatus), TRIM(occupation), TRIM(relationship), TRIM(race), TRIM(sex), cast(trim(capitalgain) as int) as capitalgain, cast(trim(capitalloss) as int) capitalloss, 
+	cast(trim(hoursperweek) as int) hoursperweek, TRIM(nativecountry), TRIM(result) from adults;
+
+SELECT * FROM ADULTS_CLEANED; 
+
+SELECT RESULT, SEX, COUNT(1) AS QUANTITY, AVG(AGE) AGE_AVG
+FROM ADULTS_CLEANED
+GROUP BY RESULT, SEX;
+
+DROP TABLE ADULTS; 
+CREATE TABLE ADULTS (age INT, workclass STRING, fnlwgt STRING, education STRING, educationnum STRING, maritalstatus STRING, occupation STRING, relationship STRING, race STRING, sex STRING, capitalgain STRING, capitalloss STRING, hoursperweek STRING, nativecountry STRING, result STRING) row format delimited fields terminated by ',' lines terminated by '\n';
+show tables;
+DESCRIBE ADULTS;
+
+ 
+INSERT INTO adults_cleaned [(age)]  SELECT age FROM adults;
+INSERT INTO TABLE adults_cleaned SELECT stack(age) AS (age) from adults;
+
+
+SPARK 
+
+
+docker cp spark-week.jar d100a4223b36:/home/cloudera/spark-week.jar
+docker cp fakefriends.csv d100a4223b36:/home/cloudera/fakefriends.csv
+docker cp FriendsByAge.jar d100a4223b36:/home/cloudera/FriendsByAge.jar
+
+docker exec -it d100a4223b36 bash
+
+hdfs dfs -put /home/cloudera/fakefriends.csv /user/cloudera/bash_folder/fakefriends.csv
+
+spark-submit --class com.agn.spark.FriendsByAge --master local[*] /home/cloudera/FriendsByAge.jar /user/cloudera/bash_folder/fakefriends.csv
+
