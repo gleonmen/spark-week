@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.frugalmechanic:scala-optparse_2.10:1.1.2:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.frugalmechanic/scala-optparse_2.10/jars/scala-optparse_2.10-1.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.frugalmechanic/scala-optparse_2.10/srcs/scala-optparse_2.10-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
